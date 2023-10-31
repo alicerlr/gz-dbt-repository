@@ -12,6 +12,9 @@ sources:
             description: date description
           - name: orders_id
             description: orders identification
+            tests:
+              - unique
+              - not null
           - name: pdt_id
             description: product identification
           - name: revenue
@@ -26,6 +29,7 @@ sources:
             description: primary_key
             tests:
               - unique
+              - not null
 
           - name: purchase_price
             description: purchase price description
@@ -36,6 +40,7 @@ sources:
             description: orders_id description
             tests:
               - unique
+              - not null
           - name: shipping_fee
             description: shipping_fee description
           - name: logCost
