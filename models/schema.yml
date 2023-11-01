@@ -21,7 +21,6 @@ sources:
             description: revenue of the revenue
           - name: quantity
             description: quantity purchased per product
-
       - name: product
         identifier: raw_gz_product
         columns:
@@ -30,7 +29,6 @@ sources:
             tests:
               - unique
               - not null
-
           - name: purchase_price
             description: purchase price description
       - name: ship
