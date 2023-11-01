@@ -8,7 +8,7 @@ WITH int_campaign_day AS (
 )
 
 SELECT
-  day AS campaign_day,
+  day AS int_campaign_days,
   campaign_name,
   total_ads_cost
 FROM int_campaign_day
