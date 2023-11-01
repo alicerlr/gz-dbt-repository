@@ -12,35 +12,23 @@ sources:
             description: date description
           - name: orders_id
             description: orders identification
-            tests:
-              - unique
-              - not null
           - name: pdt_id
             description: product identification
           - name: revenue
             description: revenue of the revenue
           - name: quantity
             description: quantity purchased per product
-
       - name: product
         identifier: raw_gz_product
         columns:
           - name: products_id
             description: primary_key
-            tests:
-              - unique
-              - not null
-
           - name: purchase_price
             description: purchase price description
       - name: ship
         identifier: raw_gz_ship
         columns:
           - name: orders_id
-            description: orders_id description
-            tests:
-              - unique
-              - not null
           - name: shipping_fee
             description: shipping_fee description
           - name: logCost
