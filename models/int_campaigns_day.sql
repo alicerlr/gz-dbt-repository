@@ -11,4 +11,4 @@ SELECT
   day AS int_campaign_days,
   campaign_name,
   total_ads_cost
-FROM int_campaign_day
+FROM int_campaigns
