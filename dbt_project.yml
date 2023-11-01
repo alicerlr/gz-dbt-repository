@@ -6,6 +6,11 @@ name: 'my_new_project'
 version: '1.0.0'
 config-version: 2
 
+models:
+  my_new_project:
+    mart: finance_days.sql  # Répertoire "mart"
+      materialized: table  # Configuration pour les modèles dans le répertoire "mart"
+
 # This setting configures which "profile" dbt uses for this project.
 profile: 'default'
 
@@ -39,4 +44,5 @@ models:
   my_new_project:
     # Applies to all files under models/example/
     example:
+      marts:
       +materialized: table
